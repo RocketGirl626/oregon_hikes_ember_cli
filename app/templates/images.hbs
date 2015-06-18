@@ -2,3 +2,7 @@
 
 
 {{outlet}}
+
+{{#each image in model}}
+  <div class='each-msg'>{{image.name}}: {{image.body}}</div>
+{{/each}}
