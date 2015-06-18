@@ -1,6 +1,7 @@
 <h1>OregonHikes</h1>
 
-<div class='new-msg-link'>{{#link-to 'images.new'}}Add a new picture{{/link-to}}</div>
-<img {{bind-attr src=model.pic11}} {{action 'hideFullsize'}}alt="large1">
-  
+<h3>{{name}}</h3>
+<p>{{body}}</p>
+<img {{bind-attr src=model.url}} alt="image">
+
 {{outlet}}
