@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'oregon-hikes',
     environment: environment,
+    firebase: 'https://incandescent-torch-7894.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
