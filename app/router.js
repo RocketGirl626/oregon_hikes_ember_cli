@@ -6,8 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('hike');
-  this.route('hikes');
+  // this.resource('hikes', {path: '/'});
+  this.resource('hikes', function() {
+    this.route('new');
+  });
+
   this.resource('images', function() {
     this.route('new');
   });

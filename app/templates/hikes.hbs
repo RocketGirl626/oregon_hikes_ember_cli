@@ -1,0 +1,9 @@
+<div class='new-hike-link'>{{#link-to 'hikes.new'}}Add a new hike{{/link-to}}</div>
+
+
+{{outlet}}
+
+
+{{#each hike in model}}
+  <div class='each-hike'>{{hike.name}}: {{hike.body}}: {{hike.url}}</div>
+{{/each}}
