@@ -3,7 +3,8 @@
 
 {{outlet}}
 
-
-{{#each hike in model}}
-  <div class='each-hike'>{{hike.name}}: {{hike.body}}: {{hike.url}}</div>
-{{/each}}
+<ul>
+  {{#each hike in model}}
+    <li>{{#link-to 'hike' hike.id}}{{hike.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>

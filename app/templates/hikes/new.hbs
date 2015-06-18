@@ -1,0 +1,9 @@
+<div class='new-message-form'>
+  {{input type='text' placeholder='Hike Name' value=name class='name-input'}}
+  {{input type='text' placeholder='Hike Description' value=body class='desc-input'}}
+  {{input type='text' placeholder='Picture URL' value=url class='url-input'}}
+  <button {{action 'addHike'}} class='submit'>Submit</button>
+</div>
+
+
+{{outlet}}

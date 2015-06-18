@@ -14,6 +14,7 @@ Router.map(function() {
   this.resource('images', function() {
     this.route('new');
   });
+  this.route('hike', {path: 'hikes/:hike_id'});
 });
 
 export default Router;
